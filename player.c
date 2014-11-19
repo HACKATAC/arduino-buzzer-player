@@ -71,7 +71,7 @@ int playActualNote()
 	if (actualNote != 0) {
 		int tone = ((actualNote >> 16) & 0xFFFF);
 		int duration = (actualNote & 0xFFFF);
-		if (tone == 0) {
+		if (tone != 0) {
 #if ! __GNUC__
 #if ! __x86_64__
 			tone(BUZE_PIN, tone);
