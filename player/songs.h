@@ -1,9 +1,9 @@
 //sounds extracted from http://forum.arduino.cc/index.php?topic=991.0
-//All the songs have been transforming into other data structure
+//All the songs have been transforming longo other data structure
 //that's more compact in order to be able to have more songs in memory
 //Original source code shown below
 
-int knighRider[] = {
+long knighRider[] = {
 //NAME
 0,
 1734962795, 
@@ -146,7 +146,7 @@ int knighRider[] = {
 };
 
 
-int misionImp[] = {
+long misionImp[] = {
 
 0,//NAME
 1769171309, 
@@ -311,7 +311,7 @@ int misionImp[] = {
 };
 
 
-int topGun[] = {
+long topGun[] = {
 0, //NAME
 544239476, 
 7239015,
@@ -399,7 +399,7 @@ int topGun[] = {
 0
 };
 
-int starWars [] = {
+long starWars [] = {
 //Mark with 0 because it has name
 //name goes between 0 and 0.
 
@@ -498,7 +498,7 @@ int starWars [] = {
 0
 };
 
-int bond[] = {
+long bond[] = {
 0, // NAME
 1684959074, 
 0, // END NAME
@@ -583,7 +583,7 @@ int bond[] = {
 0
 };
 
-int indiana[] = {
+long indiana[] = {
 0, //Name 
 1768189545, 
 6385249,
@@ -703,7 +703,7 @@ int indiana[] = {
 0
 };
 
-int simpsons[] = {
+long simpsons[] = {
 0, //Name
 1886218611, 
 1936617331,
@@ -759,7 +759,7 @@ int simpsons[] = {
 0
 };
 
-int smbUnderground[]= {
+long smbUnderground[]= {
 0, //Name
 1430408531, 
 1919247470, 
@@ -890,7 +890,7 @@ int smbUnderground[]= {
 54460566,
 };
 
-int smbWater[] = {
+long smbWater[] = {
 0, // Name
 
 1463962963, 
@@ -1041,7 +1041,7 @@ int smbWater[] = {
 
 
 
-int smbDeath [] = {
+long smbDeath [] = {
 0, // Name
 1145195859, 
 1752457573,
@@ -1149,7 +1149,7 @@ int smbDeath [] = {
 //#define NOTE_AS7 3729
 //#define NOTE_B7  3951
 
-//int notes[] = { 0,
+//long notes[] = { 0,
 //NOTE_C4, NOTE_CS4, NOTE_D4, NOTE_DS4, NOTE_E4, NOTE_F4, NOTE_FS4, NOTE_G4, NOTE_GS4, NOTE_A4, NOTE_AS4, NOTE_B4,
 //NOTE_C5, NOTE_CS5, NOTE_D5, NOTE_DS5, NOTE_E5, NOTE_F5, NOTE_FS5, NOTE_G5, NOTE_GS5, NOTE_A5, NOTE_AS5, NOTE_B5,
 //NOTE_C6, NOTE_CS6, NOTE_D6, NOTE_DS6, NOTE_E6, NOTE_F6, NOTE_FS6, NOTE_G6, NOTE_GS6, NOTE_A6, NOTE_AS6, NOTE_B6,
