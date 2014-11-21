@@ -12,3 +12,5 @@ There are two projects :
    A simple example is provided.
    
 Readme Still in development
+
+Video : http://youtu.be/yUCFc55zZ5k
