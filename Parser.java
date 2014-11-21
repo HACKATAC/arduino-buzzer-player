@@ -50,6 +50,7 @@ public class Parser {
                 System.out.println("// tone: "+split[0] + " duration "+split[1]);
                 int tone = Integer.parseInt(split[0].replace('\n', ' ').trim());
                 int duration = Integer.parseInt(split[1].replace('\n', ' ').trim());
+		duration = (int)  ((float)duration * 1.3);
                 int reduced = tone << 16;
                 reduced = reduced | duration;
                 System.out.println(reduced+",");
