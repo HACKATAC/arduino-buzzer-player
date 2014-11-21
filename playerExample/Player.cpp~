@@ -15,20 +15,22 @@ char* Player::getName() {
 	
 void Player::loop() {
 	long actualNote = *actualMusic;
-	if (actualNote != 0) {
-		actualMusic++;
-		long note = ((actualNote >> 16) & 0xFFFF);
-		long duration = (actualNote & 0xFFFF);
-		if (note != 0) {
-			Serial.println(note);
-			tone(buzePin, note, duration);
-			nextNoteMilli = (duration - 1) + millis();;
+	if(nextNoteMilli - millis() < 4) {
+		if (actualNote != 0) {
+			actualMusic++;
+			long note = ((actualNote >> 16) & 0xFFFF);
+			long duration = (actualNote & 0xFFFF);
+			if (note != 0) {
+				Serial.println(note);
+				tone(buzePin, note, duration);
+				nextNoteMilli = (duration - 1) + millis();;
+			} else {
+				nextNoteMilli = (duration) + millis();
+			}
 		} else {
-			nextNoteMilli = (duration) + millis();
+			nextSong();
+			this->nextNoteMilli = millis() +  timeBetweenSongs;
 		}
-	} else {
-		nextSong();
-		this->nextNoteMilli = millis() +  timeBetweenSongs;
 	}
 }
 	
